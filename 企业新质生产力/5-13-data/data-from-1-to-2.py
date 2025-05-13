@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # === Step 1: 读取原始数据 ===
-file_path = r"data-1-initial.xlsx"
+file_path = r"data-1-processed-normalized.xlsx"
 df = pd.read_excel(file_path, header=0)
 
 # 设置列名：前两列是 股票代码、年份，后面是指标

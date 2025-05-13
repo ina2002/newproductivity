@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # === 参数设置 ===
-input_data_path = "data-1-processed.xlsx"
+input_data_path = "data-1-processed-normalized.xlsx"
 input_weight_path = "data-4-criteria-final-weight.xlsx"
 output_path = "data-6-final-score.xlsx"
 
