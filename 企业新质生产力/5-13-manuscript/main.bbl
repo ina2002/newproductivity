@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{International Atomic Energy Agency}(2024)]{IAEA2024OPEX}
+{International Atomic Energy Agency}.
+\newblock Operating experience with nuclear power stations in member states (2024 edition), August 2024.
+\newblock ISSN 1011-2634.
+\newblock © IAEA, 2024. Produced by the IAEA in Austria.
+
+\end{thebibliography}

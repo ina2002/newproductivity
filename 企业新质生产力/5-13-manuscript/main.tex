@@ -1,0 +1,114 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,inputenc}
+\usepackage{ctex}
+\usepackage{longtable}
+\usepackage{bookmark}
+\title{New Productivity}
+\author{Fengjing Zhu}
+
+%\date{May 2023}
+
+% the following two macros define an arxiv environment
+\newif\ifarxiv   % Toggle appendix
+\arxivtrue %set true for arxiv version
+
+% useage:
+\ifarxiv
+% ...text that appears only on arxiv
+\else
+% ...text that appears only on AISTATS version. 
+\fi
+
+\usepackage{natbib}
+ \bibpunct[, ]{(}{)}{,}{a}{}{,}%
+ \def\bibfont{\small}%
+ \def\bibsep{\smallskipamount}%
+ \def\bibhang{24pt}%
+ \def\newblock{\ }%
+ \def\BIBand{and}%
+
+\usepackage{rotating}
+\usepackage{threeparttable}
+\usepackage{makecell}
+\usepackage{fancyvrb}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+\input{tex/preamble-arxiv24}
+\input{tex/macros}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows.meta, positioning}
+\begin{document}
+
+
+
+\vspace{-5pt}
+
+\section{OPA-entropy model}
+\label{sec:OPA-entropy}
+
+
+
+\begin{table}[h]
+\centering
+\caption{模型参数与符号分类说明}
+\begin{tabular}{lll}
+\toprule
+\textbf{类别} & \textbf{符号} & \textbf{含义} \\
+\midrule
+\multirow{3}{*}{集合参数}
+& $I$ & 专家数量  \\
+& $J$ & 指标数量  \\
+& $T$ & 年度数量  \\
+\midrule
+\multirow{3}{*}{输入数据}
+& $a_i$ & 决策者对专家 $i$ 的重要性排序 \\
+& $b_{ij}$ & 专家 $i$ 对指标 $j$ 的排序（越小越重要） \\
+& $e_j^t$ & 第 $t$ 年第 $j$ 个指标的熵权 \\
+\midrule
+\multirow{2}{*}{决策变量}
+& $x_{ij}$ & 专家 $i$ 对指标 $j$ 分配的权重 \\
+& $z$ & 最小排序差异度（用于排序一致性） \\
+\midrule
+派生变量
+& $y_j  $ & 第 $j$ 个指标的融合权重 \\
+\midrule
+模型参数
+& $\varepsilon$ & 主客观权重差异容差 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\subsection*{模型}
+
+\begin{align*}
+\max \quad & z \\
+\text{s.t.} \quad 
+& z \le a_i \cdot b_{ij} \cdot (x_{ij} - x_{il}), 
+&& \forall i \in [I],\ \forall j,l \in [J],\ \text{if } b_{il} > b_{ij} \\
+&\sum_{i=1}^I x_{ij} = y_j,&& \forall j \in [J] \\
+& \sum_{j=1}^J \left( y_j - e_j^t \right)^2 \le \varepsilon^2,
+&& \forall t \in [T] \\
+& \sum_{j=1}^J y_j= 1 \\
+& x_{ij} \ge 0, && \forall i\in [I],\ j \in [J] \\
+& z \ge 0.
+\end{align*}
+
+%d^t_{jk}：年份t,指标j, 省份k的定量值data.xlsx,sheet='dtjk')
+%e^t_{j}:年份t,指标j的熵值data.xlsx,sheet='etj')
+%a_i：专家的重要性排名,最重要的专家是1,最不重要的专家是5,data.xlsx,sheet='ai')
+%b_{ij}:专家对指标的主观排序,data.xlsx,sheet='bij')
+%I=5,J=25,K=30,T=11
+
+
+
+\end{document}
+
+
+
+
+
