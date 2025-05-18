@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Manuscript.aux
+The style file: unsrtnat.bst
+Database file #1: ref.bib
+Warning--there's a number but no volume in 曹东勃2024新质生产力指标体系构建研究
+Warning--there's a number but no volume in 胡佳霖2024中国新质生产力：区域差距、动态演进与跃迁趋势
+Warning--there's a number but no volume in 张海2024新质生产力发展水平、空间差异及动态演进
+Warning--there's a number but no volume in 简新华2024中国新质生产力水平测度及省际现状的比较分析
+Warning--there's a number but no volume in 徐波2024新质生产力对资源配置效率的影响效应研究
+Warning--there's a number but no volume in 杨智晨2025我国新质生产力发展的理论基础、时空特征及分异机理
+Warning--there's a number but no volume in 龚宇润2024新质生产力的理论意蕴、统计测度与时空分异特征
+Warning--there's a number but no volume in 张龙2024新质生产力的原创价值、统计测度与培育方向
+Warning--there's a number but no volume in 刘源2025新质生产力发展水平动态演进、影响因素及提升路径
+Warning--there's a number but no volume in 高怡冰2024中国新质生产力的发展水平和演进趋势
+Warning--there's a number but no volume in 王娟娟2024新质生产力对产业布局的影响与区域锁定
+Warning--there's a number but no volume in 李勇坚2025新质生产力的科学内涵、要素基础与测度研究
+Warning--there's a number but no volume in 朱波2024数字金融发展对区域新质生产力的影响及作用机制
+Warning--there's a number but no volume in 王宁2024新质生产力发展水平测度、动态演进与时空收敛特征
+Warning--there's a number but no volume in 黄华一2025新质生产力的统计测度与区域差异分析
+You've used 31 entries,
+            2481 wiz_defined-function locations,
+            751 strings with 11789 characters,
+and the built_in function-call counts, 12388 in all, are:
+= -- 1126
+> -- 619
+< -- 13
++ -- 238
+- -- 176
+* -- 1061
+:= -- 2005
+add.period$ -- 129
+call.type$ -- 31
+change.case$ -- 62
+chr.to.int$ -- 31
+cite$ -- 46
+duplicate$ -- 589
+empty$ -- 1082
+format.name$ -- 229
+if$ -- 2588
+int.to.chr$ -- 1
+int.to.str$ -- 32
+missing$ -- 31
+newline$ -- 199
+num.names$ -- 93
+pop$ -- 206
+preamble$ -- 1
+purify$ -- 31
+quote$ -- 0
+skip$ -- 310
+stack$ -- 0
+substring$ -- 565
+swap$ -- 68
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 217
+warning$ -- 15
+while$ -- 115
+width$ -- 0
+write$ -- 478
+(There were 15 warnings)
