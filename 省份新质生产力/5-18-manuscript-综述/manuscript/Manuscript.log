@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.8.5)  18 MAY 2025 19:52
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.8.5)  19 MAY 2025 16:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -729,12 +729,6 @@ LaTeX Font Warning: Font shape `TU/ppl/m/n' undefined
 
 ]
 
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.65999pt, for example:
-(fancyhdr)                \setlength{\footskip}{12.65999pt}.
-
-[2]
-
 Package fontspec Info: Could not resolve font "Microsoft YaHei Bold/I" (it
 (fontspec)             probably doesn't exist).
 
@@ -742,7 +736,7 @@ Package fontspec Info: Could not resolve font "Microsoft YaHei Bold/I" (it
 Package fontspec Info: Could not resolve font "Microsoft YaHei/I" (it probably
 (fontspec)             doesn't exist).
 
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 162.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 170.
  (d:/texlive/texlive/2024/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
@@ -770,13 +764,7 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 12.65999pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.65999pt}.
 
-[3] (./Manuscript.bbl
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.65999pt, for example:
-(fancyhdr)                \setlength{\footskip}{12.65999pt}.
-
-[4]
+[2] (./Manuscript.bbl
 
 Package fontspec Info: Could not resolve font "FangSong/BI" (it probably
 (fontspec)             doesn't exist).
@@ -810,7 +798,13 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 12.65999pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.65999pt}.
 
-[5])
+[3]
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.65999pt, for example:
+(fancyhdr)                \setlength{\footskip}{12.65999pt}.
+
+[4])
 \openout3 = `Manuscript.ent'.
 
 
@@ -819,7 +813,7 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 12.65999pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.65999pt}.
 
-[6] (./Manuscript.aux)
+[5] (./Manuscript.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
@@ -829,15 +823,15 @@ L3 programming layer <2022/07/14>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: F5E0342C46D6CE74DA7D1D40D92EB6FD;893.
+(rerunfilecheck)             Checksum: 648C528D8D591040DE68EE61B6BC864C;774.
  ) 
 Here is how much of TeX's memory you used:
- 18708 strings out of 474773
- 378951 string characters out of 5757730
- 1951842 words of memory out of 5000000
- 40540 multiletter control sequences out of 15000+600000
- 586695 words of font info for 109 fonts, out of 8000000 for 9000
+ 18738 strings out of 474773
+ 379365 string characters out of 5757730
+ 1953842 words of memory out of 5000000
+ 40557 multiletter control sequences out of 15000+600000
+ 590736 words of font info for 127 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,12n,97p,694b,551s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,12n,97p,411b,565s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Manuscript.pdf (6 pages).
+Output written on Manuscript.pdf (5 pages).
