@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Manuscript.aux
+The style file: unsrtnat.bst
+Database file #1: ref.bib
+Warning--there's a number but no volume in 董庆前2024中国新质生产力发展水平测度、时空演变及收敛性研究
+Warning--there's a number but no volume in 张海2024新质生产力发展水平、空间差异及动态演进
+Warning--there's a number but no volume in 胡佳霖2024中国新质生产力：区域差距、动态演进与跃迁趋势
+Warning--there's a number but no volume in 韩文龙2024新质生产力水平测算与中国经济增长新动能
+Warning--there's a number but no volume in 简新华2024中国新质生产力水平测度及省际现状的比较分析
+Warning--there's a number but no volume in 杨智晨2025我国新质生产力发展的理论基础、时空特征及分异机理
+Warning--there's a number but no volume in 乔晓楠2024新质生产力发展的分析框架：理论机理、测度方法与经验证据
+Warning--there's a number but no volume in 张龙2024新质生产力的原创价值、统计测度与培育方向
+You've used 24 entries,
+            2481 wiz_defined-function locations,
+            717 strings with 10264 characters,
+and the built_in function-call counts, 9843 in all, are:
+= -- 885
+> -- 488
+< -- 10
++ -- 190
+- -- 140
+* -- 847
+:= -- 1593
+add.period$ -- 98
+call.type$ -- 24
+change.case$ -- 48
+chr.to.int$ -- 22
+cite$ -- 32
+duplicate$ -- 460
+empty$ -- 867
+format.name$ -- 178
+if$ -- 2060
+int.to.chr$ -- 3
+int.to.str$ -- 25
+missing$ -- 24
+newline$ -- 154
+num.names$ -- 72
+pop$ -- 152
+preamble$ -- 1
+purify$ -- 24
+quote$ -- 0
+skip$ -- 243
+stack$ -- 0
+substring$ -- 509
+swap$ -- 57
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 168
+warning$ -- 8
+while$ -- 89
+width$ -- 0
+write$ -- 371
+(There were 8 warnings)

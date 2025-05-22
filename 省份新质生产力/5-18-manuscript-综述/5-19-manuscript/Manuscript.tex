@@ -1,0 +1,190 @@
+\documentclass[nonblindrev]{write_paper} 
+\usepackage{amsmath}
+\usepackage{ctex}
+\usepackage{url}
+\usepackage{algorithm}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{algpseudocode}
+\usepackage{subfigure}
+\usepackage{epsfig}
+%链接点击跳转
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=magenta,      
+  urlcolor=blue,
+  citecolor=blue,
+}
+\makeatletter
+\@ifundefined{newblock}{\def\newblock{\hskip .11em plus .33em minus .07em}}{}
+\makeatother
+
+\usepackage{enumitem}
+\makeatletter
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+                                   {-1ex \@plus -1ex \@minus -.1ex}%
+                                   {1 ex \@plus.1ex}%
+                                   {\normalfont\large\bfseries}}
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+                                     {-1ex\@plus -1ex \@minus -.1ex}%
+                                     {1ex \@plus .1ex}%
+                                     {\normalfont \normalsize \bfseries}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+                                     {-1ex\@plus -1ex \@minus -.1ex}%
+                                     {1ex \@plus .1ex}%
+                                     {\normalfont\normalsize\bfseries}}
+\makeatother
+
+\renewcommand{\theARTICLETOP}{}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{}
+\fancyhead[RE,LO]{\scriptsize{New quality productivity of Province in China: Measurement and spatial-temporal evolution} \\
+\scriptsize{Article submitted to:}}
+\fancyfoot[CE,CO]{\leftmark}
+\cfoot{\thepage}
+
+\usepackage[T1]{fontenc}
+\usepackage{palatino}
+
+\OneAndAHalfSpacedXI
+\usepackage{color}
+\usepackage{soul}
+
+\DeclareMathOperator{\E}{\mathbb{E}}
+\DeclareMathOperator{\R}{\mathbb{R}}
+\DeclareMathOperator{\B}{\mathbb{B}}
+\DeclareMathOperator{\Z}{\mathbb{Z}}
+
+%%-----------------------------------------
+%% 将作者-年份改为数字制
+\usepackage[numbers]{natbib}  % 关键：numbers选项
+% \bibpunct{[}{]}{,}{n}{}{,}   % 若需要可自行指定标点
+%%-----------------------------------------
+
+% 如果之前有 \bibpunct 设置, 请注释掉或删除以免冲突
+% \bibpunct[, ]{(}{)}{,}{a}{}{,}%  <-- 原先作者-年份制, 需要注释或删除
+
+\TheoremsNumberedThrough
+\EquationsNumberedThrough
+\MANUSCRIPTNO{} 
+\newtheorem{prop}{{Proposition}}
+%\newtheorem{lemma}{{Lemma}}
+
+\renewcommand{\algorithmicrequire}{{Input:}}
+\renewcommand{\algorithmicensure}{{Output:}}
+
+\newtheorem{implication}{\noindent{Implication}}
+
+\newcommand{\YH}[1]{{\color{blue}#1}}
+\newcommand{\JJ}[1]{{\color{black}#1}}
+\newcommand{\eat}[1]{}
+\usepackage{graphicx}
+
+\usepackage{endnotes}
+\let\footnote=\endnote
+\def\notesname{Endnotes}
+
+\usepackage[symbol]{footmisc}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\newcommand{\bs}[1]{\boldsymbol{#1}}
+\newcommand{\ml}[1]{\mathcal{#1}}
+\newcommand{\mb}[1]{\mathbb{#1}}
+
+\begin{document}
+
+\TITLE{New quality productivity of Province in China: Measurement and spatial-temporal evolution}
+
+\ARTICLEAUTHORS{}
+
+\ABSTRACT{
+
+\noindent {Abstract.} 
+
+\noindent {Keywords:} }
+
+\maketitle
+
+\vspace{-5mm}
+\section{Introduction}
+\label{sec:introduction}
+\section{Literature Review}
+\label{sec:literature_review}
+\subsection{新质生产力发展内涵与测度研究}
+\label{subsection:the connotation and measurement of new quality productivity}
+
+\subsubsection{发展内涵} 
+\label{subsubsection:the connotation of new quality productivity}
+
+为科学评估新质生产力其发展水平，构建合理的评价指标体系成为研究新质生产力发展内涵的核心任务。根据已有研究，中国学者在新质生产力指标体系构建路径上主要呈现两类主导范式\citep{彭桥2024中国新质生产力发展水平测度、动态演化与驱动因素研究}：一是基于生产力三要素劳动者、劳动资料、劳动对象及其优化组合的质变逻辑进行界定与测度；二是基于新质生产力的表现特征进行界定与测度。
+
+基于生产力三要素的构建路径坚持生产力构成的基本理论，强调新质生产力的本质在于劳动三要素的质态跃升与系统优化。多数文献在指标体系设计中直接构建与三要素对应的维度或将其嵌入评价框架中。王珏和王荣基\citep{王珏2024新质生产力：指标构建与时空演进}、李光勤和李梦娇\citep{李光勤2024中国省域新质生产力水平评价、空间格局及其演化特征}以“新质劳动者、劳动资料与劳动对象”三要素为主轴构建综合指标体系；董庆前则在三要素基础上进一步细化指标体系，加入“优化组合跃升”子系统，构建涵盖劳动者、劳动资料、劳动对象与要素配置机制的评价框架\citep{董庆前2024中国新质生产力发展水平测度、时空演变及收敛性研究}。该路径理论基础坚实，逻辑清晰，便于与传统生产力理论对接，但其不足在于对绿色化、数字化、智能化等当代表现维度的覆盖相对薄弱。
+基于表现特征的构建路径则从技术、组织与产业结构的新特征出发，强调新质生产力的现代特性。张海等\citep{张海2024新质生产力发展水平、空间差异及动态演进}以“三高”（高科技、高效能、高质量）特征为指标核心构建新质生产力发展评价体系；胡佳霖与徐俊构建“三高三化”指标体系，其中“三化”（创新化、绿色化、数字化）突显其时代特征\citep{胡佳霖2024中国新质生产力：区域差距、动态演进与跃迁趋势}；韩文龙等则融合“新”“质”“力”的综合逻辑，在构建体系中引入实体性要素与表现性维度相结合的结构设计，突出绿色、数字、智能等现代属性，在理论与实证层面对“新质生产力的结构特征与测度机制”提供了系统化表达\citep{韩文龙2024新质生产力水平测算与中国经济增长新动能}；卢江等则从科技、绿色、数字三类代表性维度出发构建指标体系，强调新质生产力是符合高质量发展要求的综合表现形态，体系设计突出数据可得性与政策适配性，代表了典型的表现特征主导路径\citep{卢江2024新质生产力发展水平、区域差异与提升路径}。该路径贴合实践，便于政策转化，数据可得性较高，但其理论基础相对分散，存在指标泛化倾向。
+
+总体而言，三要素路径重视理论原创性与生产力内核，而表现特征路径强调实践导向与测度便利。为兼顾两类路径的优势，本文在已有研究基础上引入“投入—过程—产出”三阶段逻辑，构建涵盖新质生产力形成全过程的指标体系，强调新质生产力的三要素供给基础、结构转化机制与综合产出目标的系统映射，在理论逻辑、现实表现与政策应用之间建立更强的联动性，具备阶段性、系统性和政策可操作性，为区域新质生产力水平评价提供了新的分析框架与工具支持。
+
+\subsubsection{测度研究}
+\label{subsubsection:measurement of new quality productivity}
+
+在新质生产力发展水平的评估实践中，指标权重的设定作为测度模型的关键环节，直接影响评价结果的科学性与政策指导性。相关研究在方法选择上由早期的单一静态赋权逐步演化为多元融合与动态适应的方向。
+
+初期研究中，熵值法因其数据驱动性和无需人为干预的优势而被广泛应用，成为测度新质生产力的主流方法之一。胡佳霖等\citep{胡佳霖2024中国新质生产力：区域差距、动态演进与跃迁趋势}、简新华等\citep{简新华2024中国新质生产力水平测度及省际现状的比较分析}等均采用熵值法构建权重，系统评估了省域、区域乃至城市群层级的新质生产力发展水平与空间差异。该方法在强调客观性的同时，存在权重区分度不足和指标间相关性处理能力有限的问题。
+随着研究深入，学者们逐步引入多方法融合或对熵值法进行算法优化，以提升权重的科学性与指标系统的表达能力。 杨智晨等采用CRITIC-熵值法，通过结合指标变异性与冲突性增强区分度，提升指标解释力\citep{杨智晨2025我国新质生产力发展的理论基础、时空特征及分异机理}；马大晋等在熵值权重基础上加入年度差异，提升时序适应性\citep{马大晋2025中国新质生产力发展水平区域评价与空间关联网络特征}；吴继飞等则采用改进的 CRITIC-TOPSIS 综合评价方法，在保证客观赋权的基础上引入理想解排序机制，并结合 Dagum 基尼系数与 Kernel 核密度估计方法，全面分析新质生产力的空间差异与动态演化特征\citep{吴继飞2024中国新质生产力发展水平测度、区域差距及动态规律}。
+此外，部分研究从马克思主义政治经济学视角出发，尝试构建更贴近生产力本质的评估方法。乔晓楠等提出以全劳动生产率代替传统生产率，构建“新质投入—效率转化”的识别框架，实证验证了数字设备与服务对生产率的非线性影响，具有理论解释力与实证适配性的统一\citep{乔晓楠2024新质生产力发展的分析框架：理论机理、测度方法与经验证据}。上述方法通过混合模型设计，使主观判断与客观赋权得以耦合优化，增强了模型在指标相关性、多尺度测度和政策解释维度的综合能力。
+为进一步适应新质生产力发展中非线性、动态演化的复杂性，一些研究开始引入动态权重与智能优化方法。彭桥等采用逐层纵横向拉开档次法，通过时间与横截面维度增强比较稳定性\citep{彭桥2024中国新质生产力发展水平测度、动态演化与驱动因素研究}；张龙等通过构建 MI-TVP-FAVAR 模型，实现了权重在时间维度上的动态更新\citep{张龙2024新质生产力的原创价值、统计测度与培育方向}；这类方法通过引入机器学习与智能计算手段，有效增强了模型在面对非平稳数据、强相关变量及多尺度空间异质性条件下的适应能力和泛化能力。当前新质生产力测度方法呈现出从静态到动态、从线性到智能、从单维到融合的趋势演化。但现有方法中专家缺失，依赖数据驱动，缺乏对指标系统的认知解释力，导致模型在实际应用中难以兼顾理论规范性与政策适配性。因此，本文注意到新兴的排序驱动型多属性决策方法在新质生产力测度中的应用潜力，尝试将其引入新质生产力测度中，以提升模型的理论解释力与政策适配性。
+
+Ordinal Priority Approach（OPA）由 Ataei 等人提出\citep{ataeiOrdinalPriorityApproach2020}，作为一种基于排序信息的多属性决策方法，因其无需成对比较矩阵、操作简便且具一致性保障而受到关注。与传统赋权方法相比，OPA 更注重专家主观排序的表达，适用于数据缺失或模糊场景。近年来，研究者不断拓展 OPA 以增强其实用性。针对不确定性问题，Mahmoudi 等提出区间 OPA \citep{mahmoudi2023intervalopa}和模糊 OPA\citep{mahmoudi2022fuzzyopa}，用于分别刻画专家意见的模糊性与语言表达。Abdel-Basset 等引入中智集理论，提升了模型处理复杂信息的能力\citep{abdelbasset2022opa}。Wang 等结合灰色关联分析提出部分排序 OPA（POPA），引入专家共识机制，适用于多目标博弈情境\citep{wang2024popa}。Cui 等将 OPA 应用于碳排放效率评估，体现其在政策导向型测度中的适配性\citep{cui2025carbonopa}。
+此外，OPA 也与模糊函数结合，增强排序的灵活性与鲁棒性\citep{pamucar2023opa,pamucar2022raaopa}；在项目组合与供应商选择中，OPA 被拓展为鲁棒 OPA \citep{mahmoudi2022ropa}与 DEA-OPA 模型\citep{mahmoudi2022deaopa}。
+OPA 及其变体已成为应对复杂赋权与排序问题的重要工具，适用于新质生产力等政策性、结构性评价研究。
+
+在上述研究基础上，本文采用 OPA-熵权测度方法，融合客观数据驱动与主观专家排序信息，兼顾指标客观差异性与专家认知逻辑。通过 OPA 优化赋权模型的引入，使得专家排序的使用过程更具结构性与解释性，为新质生产力测度提供了兼顾理论规范、实践适配、专家知识的技术路径。
+
+
+\newpage
+\bibliographystyle{unsrtnat} 
+\bibliography{ref}
+\begin{table}[htbp]
+\footnotesize
+\centering
+\caption{期刊语言、C刊属性及英文期刊的分区与影响因子}
+\begin{tabular}{p{1cm}p{7cm}cccl}
+\hline
+\textbf{引用} & \textbf{期刊名称} & \textbf{语言} & \textbf{中文C刊} & \textbf{影响因子（2023）} & \textbf{分区} \\
+\hline
+\cite{彭桥2024中国新质生产力发展水平测度、动态演化与驱动因素研究} & 软科学 & 中文 & 是 & -- & -- \\
+\cite{王珏2024新质生产力：指标构建与时空演进} & 西安财经大学学报 & 中文 & 是 & -- & -- \\
+\cite{李光勤2024中国省域新质生产力水平评价、空间格局及其演化特征} & 经济地理 & 中文 & 是 & -- & -- \\
+
+\cite{董庆前2024中国新质生产力发展水平测度、时空演变及收敛性研究} & 中国软科学 & 中文 & 是 & -- & -- \\
+\cite{张海2024新质生产力发展水平、空间差异及动态演进} & 统计与决策 & 中文 & 是 & -- & -- \\
+\cite{胡佳霖2024中国新质生产力：区域差距、动态演进与跃迁趋势} & 统计与决策 & 中文 & 是 & -- & -- \\
+\cite{韩文龙2024新质生产力水平测算与中国经济增长新动能} & 数量经济技术经济研究 & 中文 & 是 & -- & -- \\
+\cite{卢江2024新质生产力发展水平、区域差异与提升路径} & 重庆大学学报（社会科学版） & 中文 & 是 & -- & -- \\
+\cite{简新华2024中国新质生产力水平测度及省际现状的比较分析} & 经济问题探索 & 中文 & 是 & -- & -- \\
+\cite{杨智晨2025我国新质生产力发展的理论基础、时空特征及分异机理} & 经济问题探索 & 中文 & 是 & -- & -- \\
+\cite{马大晋2025中国新质生产力发展水平区域评价与空间关联网络特征} & 财经论丛 & 中文 & 是 & -- & -- \\
+
+\cite{吴继飞2024中国新质生产力发展水平测度、区域差距及动态规律} & 技术经济 & 中文 & 是 & -- & -- \\
+\cite{乔晓楠2024新质生产力发展的分析框架：理论机理、测度方法与经验证据} & 经济纵横 & 中文 & 是 & -- & -- \\
+\cite{张龙2024新质生产力的原创价值、统计测度与培育方向} & 暨南学报（哲学社会科学版） & 中文 & 是 & -- & -- \\
+\cite{ataeiOrdinalPriorityApproach2020} & Applied Soft Computing & 英文 & -- & 7.2 & Q1（人工智能） \\
+\cite{mahmoudi2023intervalopa} & Group Decision and Negotiation & 英文 & -- & 3.6 & Q1（社会科学） \\
+\cite{mahmoudi2022fuzzyopa} & Operations Management Research & 英文 & -- & 6.9 & Q1（管理学） \\
+\cite{abdelbasset2022opa} & Complex \& Intelligent Systems & 英文 & -- & 5.0 & Q1（人工智能） \\
+\cite{wang2024popa} & Information Sciences & 英文 & -- & 8.1 & Q1（信息系统） \\
+\cite{cui2025carbonopa} & Energy & 英文 & -- & 9.0 & Q1（能源） \\
+\cite{pamucar2023opa} & Decision Support Systems & 英文 & -- & 6.7 & Q1（运筹学） \\
+\cite{pamucar2022raaopa} & Technological Forecasting and Social Change & 英文 & -- & 12.9 & Q1（技术预测） \\
+\cite{mahmoudi2022ropa} & Expert Systems with Applications & 英文 & -- & 7.5 & Q1（人工智能） \\
+\cite{mahmoudi2022deaopa} & Group Decision and Negotiation & 英文 & -- & 3.6 & Q1（社会科学） \\
+\hline
+\end{tabular}
+\label{tab:journals}
+\end{table}
+
+
+\end{document}
